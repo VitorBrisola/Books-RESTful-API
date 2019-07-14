@@ -9,7 +9,8 @@
   "dependencies": {
     "express": "*",
     "body-parser": "*",
-    "mongoose": "*"
+    "mongoose": "*",
+    "lodash": ">=4.17.13"
   },
   "repository": {
     "type": "git",
