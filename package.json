@@ -1,0 +1,24 @@
+{
+  "name": "book-api",
+  "version": "1.0.0",
+  "description": "Simple bookstore app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorBrisola/Books-RESTful-API.git"
+  },
+  "author": "Vitor Brisola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VitorBrisola/Books-RESTful-API/issues"
+  },
+  "homepage": "https://github.com/VitorBrisola/Books-RESTful-API#readme"
+}
