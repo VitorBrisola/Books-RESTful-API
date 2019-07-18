@@ -7,10 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "*",
     "body-parser": "*",
+    "express": "*",
+    "lodash": ">=4.17.13",
     "mongoose": "*",
-    "lodash": ">=4.17.13"
+    "swagger-jsdoc": "^3.3.0",
+    "swagger-ui-express": "^4.0.7"
   },
   "repository": {
     "type": "git",
