@@ -52,6 +52,16 @@ app.put('/api/genres/:_id', function(req,res){
     });
 });
 
+app.delete('/api/genres/:_id', function(req,res){
+    var id = req.params._id;
+    Genre.deleteGenre(id,function(err,genre){
+        if(err){
+            throw err;
+        }
+        res.json(genre);
+    });
+});
+
 // Books route
 app.get('/api/books',function(req,res){
     Book.getBooks(function(err,books){
@@ -72,6 +82,27 @@ app.post('/api/books', function(req,res){
     });
 });
 
+app.put('/api/books/:_id', function(req,res){
+    var id = req.params._id;
+    var book = req.body;
+    var options = {};
+    Book.updateBook(id,book,options,function(err,book){
+        if(err){
+            throw err;
+        }
+        res.json(book);
+    });
+});
+
+app.delete('/api/books/:_id', function(req,res){
+    var id = req.params._id;
+    Book.deleteBook(id,function(err,genre){
+        if(err){
+            throw err;
+        }
+        res.json(genre);
+    });
+});
 
 
 // Single Book route

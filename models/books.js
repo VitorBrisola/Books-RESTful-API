@@ -33,3 +33,21 @@ module.exports.getBooksById = function(id,callback){
 module.exports.addBook = function(book,callback){
     Book.create(book,callback);
 };
+
+// Update Book
+module.exports.updateBook = function(id,book,options,callback){
+    var query = { _id: id };    
+    var update = {
+        title: book.title,
+        author: book.author,
+        description: book.description,
+        genre: book.genre
+    }
+    Book.findOneAndUpdate(query,update,options,callback);
+}
+
+// delete Book
+module.exports.deleteBook = function(id,callback){
+    var query = { _id: id };    
+    Book.remove(query,callback);
+}
